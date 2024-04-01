@@ -15,6 +15,7 @@
     "axios": "^1.4.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
+    "devtools-detector": "^2.0.16",
     "lucide-react": "^0.299.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
