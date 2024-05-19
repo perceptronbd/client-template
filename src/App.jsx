@@ -3,6 +3,8 @@ import './App.css';
 import { Button } from './components';
 import DevtoolsStatus from './components/devtool/devtoolDetector';
 import useDevtoolsStatus from './hooks/useDevtoolsStatus';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './pages/home/Home';
 
 function App() {
   // const navigate = () => {
@@ -19,9 +21,15 @@ function App() {
   // useDevtoolsStatus(handleDevtoolsOpen);
 
   return (
-    <div className="bg-red-300">
-      {/* <DevtoolsStatus /> */}
-      <Button>Text</Button>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />}>
+            <Route path="/" element={<Button>Text</Button>} />
+            <Route path="buttons" element={<Button>Text</Button>} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
