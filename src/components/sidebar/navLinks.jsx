@@ -72,12 +72,17 @@ export const navLinks = [
     links: [
       {
         title: 'Bar Chart',
-        path: '/bar-chart',
+        path: '/charts/bar-chart',
         icon: <BarChart size={18} />,
       },
       {
         title: 'Line Chart',
-        path: '/line-chart',
+        path: 'charts/line-chart',
+        icon: <FileText size={18} />,
+      },
+      {
+        title: 'Donut Chart',
+        path: 'charts/donut-chart',
         icon: <FileText size={18} />,
       },
     ],
