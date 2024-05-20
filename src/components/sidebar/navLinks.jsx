@@ -71,7 +71,7 @@ export const navLinks = [
       },
       {
         title: 'Stock Table',
-        path: '/table/#stock-table',
+        path: '/tables/#stock-table',
         icon: <Boxes size={18} />,
       },
     ],
