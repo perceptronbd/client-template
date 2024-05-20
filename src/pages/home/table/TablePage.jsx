@@ -1,7 +1,5 @@
 import React from 'react';
 import { Table } from '../../../components/table/Table';
-import { ListTable } from '../../../components/table/ListTable';
-import { StockTable } from '../../../components';
 
 const TablePage = () => {
   const generateMockData = () => {
@@ -26,12 +24,6 @@ const TablePage = () => {
     <div>
       <div id="table">
         <Table data={generateMockData()} />
-      </div>
-      <div id="list-table">
-        <ListTable data={generateMockData()} />
-      </div>
-      <div id="stock-table">
-        <StockTable data={generateMockData()} />
       </div>
     </div>
   );

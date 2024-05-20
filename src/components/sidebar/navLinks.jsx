@@ -58,22 +58,12 @@ export const navLinks = [
     ],
   },
   {
-    title: 'Table',
+    title: 'Tables',
     links: [
       {
         title: 'Table',
         path: '/tables/#table',
         icon: <Table size={18} />,
-      },
-      {
-        title: 'List Table',
-        path: '/tables/#list-table',
-        icon: <ClipboardList strokeWidth={1.3} size={18} />,
-      },
-      {
-        title: 'Stock Table',
-        path: '/table/#stock-table',
-        icon: <Package size={18} />,
       },
     ],
   },
