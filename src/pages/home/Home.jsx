@@ -5,10 +5,10 @@ import Navbar from '../../components/navbar/Navbar';
 
 const Home = () => {
   return (
-    <div className="flex w-full gap-6 text-start">
+    <div className="flex w-full gap-6 ">
       {' '}
       <Sidebar />
-      <div className="grid gap-6">
+      <div className="flex flex-col gap-6">
         <Navbar />
         <Outlet />
       </div>

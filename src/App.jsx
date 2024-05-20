@@ -5,6 +5,7 @@ import DevtoolsStatus from './components/devtool/devtoolDetector';
 import useDevtoolsStatus from './hooks/useDevtoolsStatus';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/home/Home';
+import InputPage from './pages/home/input/InputPage';
 
 function App() {
   // const navigate = () => {
@@ -27,6 +28,7 @@ function App() {
           <Route path="/" element={<Home />}>
             <Route path="/" element={<Button>Text</Button>} />
             <Route path="buttons" element={<Button>Text</Button>} />
+            <Route path="inputs" element={<InputPage />} />
           </Route>
         </Routes>
       </BrowserRouter>
