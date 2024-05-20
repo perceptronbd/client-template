@@ -9,6 +9,7 @@ import InputPage from './pages/home/input/InputPage';
 import TablePage from './pages/home/table/TablePage';
 import ChartPage from './pages/home/chart/ChartPage';
 import { mockDataChart } from './utils/mockData';
+import NotFound from './pages/not-found/NotFound';
 
 function App() {
   // const navigate = () => {
@@ -40,6 +41,7 @@ function App() {
               <Route path="donut-chart" element={<DonutChart data={mockDataChart} />} />
             </Route>
           </Route>
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </div>
