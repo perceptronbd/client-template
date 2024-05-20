@@ -6,6 +6,7 @@ import useDevtoolsStatus from './hooks/useDevtoolsStatus';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/home/Home';
 import InputPage from './pages/home/input/InputPage';
+import TablePage from './pages/home/table/TablePage';
 
 function App() {
   // const navigate = () => {
@@ -29,6 +30,7 @@ function App() {
             <Route path="/" element={<Button>Text</Button>} />
             <Route path="buttons" element={<Button>Text</Button>} />
             <Route path="inputs" element={<InputPage />} />
+            <Route path="tables" element={<TablePage />} />
           </Route>
         </Routes>
       </BrowserRouter>

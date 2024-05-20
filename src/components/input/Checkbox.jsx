@@ -1,19 +1,21 @@
-import React from 'react';
+import React from "react";
 
 export const Checkbox = (props) => {
   const { id, label, ...inputProps } = props;
 
   return (
-    <div className="px-2 py-1 ">
-      <input
-        className="float-left w-4 h-4 mt-1 mr-2 align-top transition duration-200 bg-transparent bg-center bg-no-repeat bg-contain border-2 border-gray-300 rounded appearance-none cursor-pointer checked:border-blue-600 checked:bg-blue-600 focus:outline-none "
-        type="checkbox"
-        id={id}
-        {...inputProps}
-      />
-      <label className="inline-block" htmlFor={id}>
-        {label}
-      </label>
-    </div>
+    <>
+      <div className="py-1">
+        <input
+          className="border-accent-secondary float-left mr-2 mt-1 h-4 w-4 cursor-pointer appearance-none rounded border-2 bg-transparent bg-contain bg-center bg-no-repeat align-top transition duration-200 checked:border-primary checked:bg-primary focus:outline-none"
+          type="checkbox"
+          id={id}
+          {...inputProps}
+        />
+        <label className="inline-block" htmlFor={id}>
+          {label}
+        </label>
+      </div>
+    </>
   );
 };

@@ -1,6 +1,6 @@
-import { Image } from 'lucide-react';
-import React, { useState } from 'react';
-import { Text } from '../text/Text';
+import { Image } from "lucide-react";
+import React, { useState } from "react";
+import { Text } from "../text/Text";
 
 // DOC:ImgInput Component
 /**
@@ -70,18 +70,18 @@ export const ImgInput = (props) => {
         className="hidden"
       />
       <label
-        htmlFor={'image'}
-        className="flex items-center justify-start h-32 p-2 text-base border rounded-lg 3xl:justify-center 3xl:w-80 3xl:h-80 3xl:text-3xl w-72 text-textColor-light hover:cursor-pointer"
+        htmlFor={"image"}
+        className="3xl:justify-center 3xl:w-80 3xl:h-80 3xl:text-3xl flex h-32 w-72 items-center justify-start rounded-lg border p-2 text-base text-textColor-light hover:cursor-pointer"
       >
         <>
           {imagePreview ? (
-            <section className="flex items-center 3xl:flex-col">
+            <section className="3xl:flex-col flex items-center">
               <img
                 src={imagePreview}
                 alt="Preview"
                 className="3xl:w-[280px] 3xl:h-[280px] 3xl:mb-2 mr-2 h-[122px] w-[122px] rounded-lg border"
               />
-              <Text className={'text-sm'}>{imageName}</Text>
+              <Text className={"text-sm"}>{imageName}</Text>
             </section>
           ) : (
             <>
