@@ -3,6 +3,7 @@ import { Checkbox } from '../../../components/input/Checkbox';
 import { FormInput } from '../../../components/input/FormInput';
 import { ImgInput } from '../../../components/input/ImgInput';
 import { Input } from '../../../components/input/Input';
+import { SearchInput } from '../../../components/input/SearchInput';
 
 const InputPage = () => {
   return (
@@ -11,6 +12,7 @@ const InputPage = () => {
       <FormInput placeholder="Form Input" />
       <ImgInput />
       <Input placeholder="Input" />
+      <SearchInput />
     </div>
   );
 };
