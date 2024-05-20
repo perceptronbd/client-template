@@ -11,6 +11,8 @@ import {
   XSquare,
   PlusCircle,
   MinusCircle,
+  Boxes,
+  Table,
 } from 'lucide-react';
 
 export const navLinks = [
@@ -51,6 +53,26 @@ export const navLinks = [
         title: 'Advanced Form',
         path: '/advanced-form',
         icon: <Edit size={18} />,
+      },
+    ],
+  },
+  {
+    title: 'Table',
+    links: [
+      {
+        title: 'Table',
+        path: '/tables/#table',
+        icon: <Table size={18} />,
+      },
+      {
+        title: 'List Table',
+        path: '/tables/#list-table',
+        icon: <List strokeWidth={1.3} size={18} />,
+      },
+      {
+        title: 'Stock Table',
+        path: '/table/#stock-table',
+        icon: <Boxes size={18} />,
       },
     ],
   },
