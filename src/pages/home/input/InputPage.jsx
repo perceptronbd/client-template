@@ -2,6 +2,7 @@ import React from 'react';
 import { Checkbox } from '../../../components/input/Checkbox';
 import { FormInput } from '../../../components/input/FormInput';
 import { ImgInput } from '../../../components/input/ImgInput';
+import { Input } from '../../../components/input/Input';
 
 const InputPage = () => {
   return (
@@ -9,6 +10,7 @@ const InputPage = () => {
       <Checkbox id="checkbox1" label="Checkbox" />
       <FormInput placeholder="Form Input" />
       <ImgInput />
+      <Input placeholder="Input" />
     </div>
   );
 };
