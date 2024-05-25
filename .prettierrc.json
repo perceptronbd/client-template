@@ -10,5 +10,6 @@
   "useTabs": false,
   "tabWidth": 2,
   "trailingComma": "es5",
-  "endOfLine": "crlf"
+  "endOfLine": "crlf",
+  "plugins": ["prettier-plugin-tailwindcss"]
 }
