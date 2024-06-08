@@ -29,7 +29,7 @@ import { Bug, Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import React, { useState } from 'react';
 
-const Navbar = () => {
+export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
   const currentPath = location.pathname;
@@ -85,5 +85,3 @@ const Navbar = () => {
     </nav>
   );
 };
-
-export default Navbar;

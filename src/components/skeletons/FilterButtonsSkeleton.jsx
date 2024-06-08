@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FilterButtonsSkeleton = () => {
+export const FilterButtonsSkeleton = () => {
   return (
     <div className="flex flex-wrap gap-2">
       {Array.from({ length: 11 }).map((_, index) => (
@@ -11,5 +11,3 @@ const FilterButtonsSkeleton = () => {
     </div>
   );
 };
-
-export default FilterButtonsSkeleton;

@@ -1,4 +1,4 @@
-//DOC: ImgInput Component
+//DOC: ImageInput Component
 /**
  * This component provides a user-friendly interface for selecting and previewing an image file.
  * It renders an input field for file selection and a preview area that displays the selected image.
@@ -36,7 +36,7 @@ import { Image } from 'lucide-react';
 import React, { useState } from 'react';
 import { Text } from '../text/Text';
 
-export const ImgInput = (props) => {
+export const ImageInput = (props) => {
   const { id, onChange, ...inputProps } = props;
   const [imagePreview, setImagePreview] = useState(null);
   const [imageName, setImageName] = useState(null);
@@ -95,3 +95,5 @@ export const ImgInput = (props) => {
     </div>
   );
 };
+
+ImageInput.displayName = 'ImageInput';

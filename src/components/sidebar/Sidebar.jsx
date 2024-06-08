@@ -27,7 +27,7 @@ import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { HelpCircle } from 'lucide-react';
 import logo from '../../assets/logo.png';
 
-const Sidebar = () => {
+export const Sidebar = () => {
   const navigate = useNavigate();
 
   const handleLogout = () => {
@@ -87,5 +87,3 @@ const Sidebar = () => {
     </aside>
   );
 };
-
-export default Sidebar;
