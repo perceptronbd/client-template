@@ -1,3 +1,15 @@
+//DOC: Button.jsx
+// This is a reusable Button component built using React and Tailwind CSS.
+// It supports various props to customize its appearance and behavior.
+// - `className`: Custom additional CSS classes.
+// - `variant`: Style variants for different button types (default: 'default').
+// - `disabled`: Disables the button if set to true (default: false).
+// - `loading`: Shows a loading spinner if set to true (default: false).
+// - `size`: Size variants for the button (default: 'default').
+// - `asChild`: Renders the button as a different component if set to true (default: false).
+// - `children`: The content inside the button.
+// - `...props`: Other props are passed to the button element.
+
 import { Slot } from '@radix-ui/react-slot';
 import { LucideLoader2 } from 'lucide-react';
 import React from 'react';
@@ -46,7 +58,7 @@ export const Button = React.forwardRef(
       >
         {loading ? (
           <>
-            <div className="flex h-4 w-4 animate-spin items-center justify-center rounded-full">
+            <div className="flex items-center justify-center w-4 h-4 rounded-full animate-spin">
               <LucideLoader2 />
             </div>
             {children && <span>{children}</span>}
